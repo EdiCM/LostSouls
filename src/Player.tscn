@@ -1,15 +1,33 @@
-[gd_scene load_steps=7 format=3 uid="uid://dtevvnuw7dogy"]
+[gd_scene load_steps=10 format=3 uid="uid://dtevvnuw7dogy"]
 
 [ext_resource type="Script" uid="uid://cx5rhkwsow0e2" path="res://src/Player.gd" id="1"]
 [ext_resource type="AudioStream" uid="uid://cr17ya6chmp4n" path="res://assets/386929__burghrecords__footsteps-indoor-soft.wav" id="2"]
 [ext_resource type="AudioStream" uid="uid://dopock72tg85n" path="res://assets/breathing.wav" id="3"]
-[ext_resource type="PackedScene" path="res://src/Fader.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://pr4y1f6s61r8" path="res://src/Fader.tscn" id="4"]
 
 [sub_resource type="CapsuleShape3D" id="1"]
 radius = 0.7
 
 [sub_resource type="CylinderShape3D" id="2"]
 radius = 0.7
+
+[sub_resource type="LabelSettings" id="LabelSettings_4s78w"]
+font_size = 32
+font_color = Color(0.805051, 0.227199, 0.194188, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lsqpv"]
+font_size = 40
+font_color = Color(0.801955, 0.653458, 0, 1)
+outline_size = 3
+outline_color = Color(0.660617, 0.119421, 0.1267, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cr8fp"]
+font_size = 28
+font_color = Color(0.191185, 0.591658, 0.780994, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 2
@@ -48,3 +66,40 @@ autoplay = true
 
 [node name="Fader" parent="." instance=ExtResource("4")]
 anchors_preset = 15
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 65.0
+text = "Lives: 3"
+label_settings = SubResource("LabelSettings_4s78w")
+
+[node name="GrabWarningLabel" type="Label" parent="CanvasLayer"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -386.0
+offset_top = -27.5
+offset_right = 386.0
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press SPACE to blind the beast...OR DIE!!"
+label_settings = SubResource("LabelSettings_lsqpv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrbCountLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 70.0
+offset_right = 220.0
+offset_bottom = 151.0
+text = "
+Orbs: 0/10"
+label_settings = SubResource("LabelSettings_cr8fp")

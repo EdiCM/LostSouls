@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://djy3s8pnupppy"]
+[gd_scene load_steps=9 format=3 uid="uid://djy3s8pnupppy"]
 
 [ext_resource type="AudioStream" uid="uid://d11wrh6bh0cl" path="res://assets/sonar_ping.wav" id="1"]
 
@@ -45,6 +45,19 @@ _data = {
 &"idle": SubResource("4")
 }
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_x8fop"]
+spread = 180.0
+initial_velocity_min = 2.0
+initial_velocity_max = 5.0
+gravity = Vector3(0, -5, 0)
+scale_min = 0.5
+scale_max = 1.5
+color = Color(0.329412, 0.545098, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_x23eh"]
+radius = 0.05
+height = 0.1
+
 [node name="Orb" type="Area3D" groups=["Orb"]]
 collision_layer = 8
 collision_mask = 0
@@ -68,3 +81,12 @@ light_color = Color(0.329412, 0.545098, 1, 1)
 stream = ExtResource("1")
 autoplay = true
 max_distance = 8.0
+
+[node name="CollectParticles" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 20
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_x8fop")
+draw_pass_1 = SubResource("SphereMesh_x23eh")

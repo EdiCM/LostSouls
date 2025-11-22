@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cjwxiabx0whdl"]
 
-[ext_resource type="PackedScene" path="res://src/Fader.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://pr4y1f6s61r8" path="res://src/Fader.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://src/menu_components/3DMenuScene.tscn" id="3"]
 [ext_resource type="Script" uid="uid://d3cksc2yly1gt" path="res://src/menu_components/MainMenu.gd" id="5"]
 [ext_resource type="PackedScene" uid="uid://p5sk3qr5we7k" path="res://src/Level.tscn" id="6"]
@@ -33,7 +33,6 @@ game_scene = ExtResource("6")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Fader" parent="CanvasLayer" instance=ExtResource("1")]
-anchors_preset = 15
 
 [node name="Control" type="Control" parent="CanvasLayer/Fader"]
 show_behind_parent = true

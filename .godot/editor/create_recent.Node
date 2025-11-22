@@ -1,2 +1,14 @@
+GPUParticles3D
+AudioStreamPlayer
+AudioStreamPlayer3D
+Button
+VBoxContainer
+CenterContainer
+Label
+Control
+ColorRect
+CanvasLayer
+MeshInstance3D
 CollisionShape3D
+Area3D
 StaticBody3D

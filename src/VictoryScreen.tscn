@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://chi3ypgl5grf7"]
+
+[ext_resource type="Script" uid="uid://dqg6j6lxn6hrn" path="res://victory_screen.gd" id="1_j368u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_parh5"]
+font_size = 60
+font_color = Color(0.440071, 0.31094, 0.00593582, 1)
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2ifau"]
+font_size = 28
+
+[node name="VictoryScreen" type="CanvasLayer"]
+script = ExtResource("1_j368u")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.431373)
+
+[node name="CenterContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.0
+offset_top = -167.0
+offset_right = 202.0
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "VICTORY!"
+label_settings = SubResource("LabelSettings_parh5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "You completed the maze!"
+label_settings = SubResource("LabelSettings_2ifau")
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="CenterContainer"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Continue"

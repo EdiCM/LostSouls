@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwh8txehgjspe"]
+
+[ext_resource type="Script" uid="uid://bkg3trnw8q2m8" path="res://game_over_screen.gd" id="1_28ccc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kmysf"]
+font_size = 60
+font_color = Color(0.439216, 0, 0.00784314, 1)
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yp11l"]
+font_size = 28
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_28ccc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.431373)
+
+[node name="CenterContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.0
+offset_top = -167.0
+offset_right = 202.0
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_kmysf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "You were defeated"
+label_settings = SubResource("LabelSettings_yp11l")
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="CenterContainer"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Continue"
