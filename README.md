@@ -56,7 +56,7 @@ A 3D survival maze game set in a medieval style labyrinth. Navigate twisted corr
       <strong>Heart</strong>
     </td>
     <td align="center" width="20%">
-      <img src=https://github.com/EdiCM/LostSouls/blob/main/images/ghost.png" alt="Ghost" width="150"/>
+      <img src="https://github.com/EdiCM/LostSouls/blob/main/images/ghost.png" alt="Ghost" width="150"/>
       <br>
       <strong>Ghost</strong>
     </td>
