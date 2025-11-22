@@ -41,27 +41,27 @@ A 3D survival maze game set in a medieval style labyrinth. Navigate twisted corr
 <table>
   <tr>
     <td align="center" width="20%">
-      <img src="https://github.com/EdiCM/ProyectoBonilla/blob/main/assets/portal.png" alt="Portal" width="150"/>
+      <img src="https://github.com/EdiCM/LostSouls/blob/main/images/portal.png" alt="Portal" width="150"/>
       <br>
       <strong>Portal</strong>
     </td>
     <td align="center" width="20%">
-      <img src="https://github.com/EdiCM/ProyectoBonilla/blob/main/assets/orb.png" alt="Magical Orb" width="150"/>
+      <img src="https://github.com/EdiCM/LostSouls/blob/main/images/orb.png" alt="Magical Orb" width="150"/>
       <br>
       <strong>Magical Orb</strong>
     </td>
     <td align="center" width="20%">
-      <img src="https://github.com/EdiCM/ProyectoBonilla/blob/main/assets/heart.png" alt="Heart" width="150"/>
+      <img src="https://github.com/EdiCM/LostSouls/blob/main/images/heart.png" alt="Heart" width="150"/>
       <br>
       <strong>Heart</strong>
     </td>
     <td align="center" width="20%">
-      <img src="https://github.com/EdiCM/ProyectoBonilla/blob/main/assets/ghost.png" alt="Ghost" width="150"/>
+      <img src=https://github.com/EdiCM/LostSouls/blob/main/images/ghost.png" alt="Ghost" width="150"/>
       <br>
       <strong>Ghost</strong>
     </td>
     <td align="center" width="20%">
-      <img src="https://github.com/EdiCM/ProyectoBonilla/blob/main/assets/ceiling_lamp.png" alt="Lamp" width="150"/>
+      <img src="https://github.com/EdiCM/LostSouls/blob/main/images/ceiling_lamp.png" alt="Lamp" width="150"/>
       <br>
       <strong>Ceiling Lamp</strong>
     </td>
