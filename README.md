@@ -117,10 +117,10 @@ A 3D survival maze game set in a medieval style labyrinth. Navigate twisted corr
 ## 🚀 Getting Started
 ```bash
 # Clone the repository
-git clone https://github.com/ZahirJS/proofproof.git
+git clone https://github.com/EdiCM/LostSouls.git
 
 # Navigate to project directory
-cd proofproof
+cd LostSouls
 
 # Run the game
 Click Run icon in Godot!
